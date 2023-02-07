@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(/fonts/Roboto-Black.ttf) format(ttf), url(/fonts/Roboto-Bold.ttf) format(ttf), url(/fonts/Roboto-Regular.ttf) format(ttf), url(/fonts/Roboto-Medium.ttf) format(ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Ubuntu&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Roboto';
+    margin: 0 auto;
+}
+
+button {
+    appearance: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #F6F6FA;
+    background-image: url(/pic/bgr.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.header__button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5101A6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header__promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 115px;
+}
+
+.header__left {
+    width: 60%;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 80px;
+    flex-basis: 576px;
+}
+
+.promo__text {
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 48px;
+    flex-basis: 576px;
+    margin-bottom: 48px;
+}
+
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__buttons {
+    display: flex;
+    gap: 0 16px;
+    align-items: center;
+}
+
+.promo__link {
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 900;
+    padding: 12px 16px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.video__player {
+    display: none;
+}
+
+.header__right {
+    position: relative;
+}
+
+.header__moon {
+    position: absolute;
+    right: 48px;
+    top: 52px;
+    height: 568px;
+    width: 568px;
+}
+
+.header__moonline {
+    position: absolute;
+    right: 105px;
+    top: 63px;
+    height: 500px;
+    width: 500px;
+}
+
+.slider {
+    margin-top: 115px;
+    margin-bottom: 96px;
+}
+
+.slider__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.dots button {
+    font-size: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    background-color: #E0E0E0;
+    margin-top: 40px;
+}
+
+.dots li button:hover {
+    background-color: #200142;
+}
+
+.slick-active button {
+    background-color: #200142;
+}
+
+.dots li {
+    font-size: 0;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 16px;
+    padding: 0;
+}
+
+.slider__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #200142;
+    border: none;
+    background-color: transparent;
+    margin-left: 50px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.slider__button:hover {
+    text-decoration: none;
+    border-color: #5101A6;
+    color: #5101A6;
+}
+
+.slider__button:first-child {
+    margin-left: 0;
+}
+
+.slider__ditails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.nav__btn {
+    border: none;
+    background-color: transparent;
+}
+
+.mySlider__title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #5101A6;
+}
+
+.footer {
+    background-color: #5101A6;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #5101A6;
+    background-image: url(/pic/form__img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.question__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question__title {
+    padding-top: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.question__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 576px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin: 0;
+}
+
+.footer__question {
+    position: relative;
+    padding-bottom: 110px;
+}
+
+.footer__question::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.question {
+    position: relative;
+    z-index: 1;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #0B0B0B;
+}
+
+.form__inp {
+    width: 256px;
+    border: 1px solid #BB6BD9;
+    height: 72px;
+    background: transparent;
+    border-radius: 6px;
+}
+
+.form__inp placeholder {
+    color: #BB6BD9;
+}
+
+.form__emile {
+    color: #FFFFFF;
+}
+
+.form__submit {
+    width: 256px;
+    height: 72px;
+    background-color: #5101A6;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.btn_and_lable {
+    position: relative;
+}
+
+.form__text {
+    color: #BB6BD9;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    background-color: #180032;
+}
